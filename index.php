@@ -1,3 +1,12 @@
+<?php
+
+$numbers = '0123456789';
+$lc_letters = 'abcdefghijklmnopqrstuvwxyz';
+$uc_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+$symbols = '!?&%$<>^+-*/()[]{}@#_=';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +20,18 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <h1 class="text-center">Strong Password Generator</h1>
+  <div class="wrapper d-flex align-items-center justify-content-center">
+    <div class="mc-container">
+      <h1 class="text-center">Strong Password Generator</h1>
+      <div class="box p-3">
+        <form class="d-flex align-items-center" action="index.php" method="GET">
+          <label for="length" class="nowrap form-label mb-0 me-3">Password length:</label>
+          <input type="number" name="length" id="length" class="me-2 form-control">
+          <button class="btn btn-primary" type="submit">Create</button>
+        </form>
+      </div>
+    </div>
+
   </div>
 </body>
 

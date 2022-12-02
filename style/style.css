@@ -12,9 +12,19 @@ body{
 
 .wrapper{
   width: 60%;
-  margin: 8rem auto;
+  height: 100%;
+  margin: 0 auto;
 }
 
 h1 {
   color: white;
+}
+
+.box{
+  background-color: rgb(171, 193, 234);
+  border-radius: 10px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
