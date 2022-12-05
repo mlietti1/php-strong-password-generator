@@ -4,9 +4,13 @@ function generatePsw($length, $listChars)
 {
   $psw = '';
 
+  while (strlen($psw) < $length) {
 
-  for ($i = 0; $i < $length; $i++) {
-    $psw .= getChar($listChars);
+    $char = getChar($listChars);
+
+    if ($_GET['allow-duplicates'] || !str_contains($psw, $char)) {
+      $psw .= $char;
+    }
   }
 
   return $psw;
